@@ -1,0 +1,324 @@
+body {
+  margin: 0px 50px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+nav div {
+  display: flex;
+}
+
+nav div h3 {
+  margin: 5px 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+nav div a {
+  text-decoration: none;
+  color: unset;
+}
+
+nav button {
+  padding: 10px 20px;
+  /* background-color: red; */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  /* box-shadow: 0px 0px 5px rgb(189, 189, 189); */
+  transition: 300ms;
+  cursor: pointer;
+}
+
+/* LOGIN PAGE CSS */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: start;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.login form {
+  background-color: rgb(243, 243, 243);
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.login form :where(p, h1) {
+  text-align: center;
+}
+
+.login form :where(div, button) {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+
+.login form button {
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.login form p{
+    padding: 0;
+    margin: 2px 0px;
+    font-size: 12px;
+}
+
+#logSubmit{
+    background-color: red;
+}
+
+#logRegister{
+    background-color: rgb(0, 146, 0);
+}
+
+#logSubmit:hover {
+  background-color: rgb(235, 3, 3);
+}
+
+#logRegister:hover{
+    background-color: rgb(0, 116, 0);
+}
+
+.login form div input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(191, 191, 191);
+  outline: none;
+}
+
+.login form div input:focus {
+  border: 1px solid red;
+}
+
+.login form hr {
+  width: 100%;
+  padding: 0.5px;
+  border: none;
+  background-color: rgb(204, 204, 204);
+}
+
+/* REGISTER PAGE CSS*/
+
+
+.register {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: start;
+    margin-top: 100px;
+    align-items: center;
+  }
+  
+  .register form {
+    background-color: rgb(243, 243, 243);
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 25%;
+    border-radius: 10px;
+  }
+  
+  .register form :where(p, h1) {
+    text-align: center;
+  }
+  
+  .register form :where(div, button) {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+  }
+  
+  .register form button {
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  
+  .register form p{
+      padding: 0;
+      margin: 2px 0px;
+      font-size: 12px;
+  }
+  
+  #regSubmit{
+      background-color: red;
+  }
+  
+  #regLogin{
+      background-color: rgb(0, 146, 0);
+  }
+  
+  #regSubmit:hover {
+    background-color: rgb(235, 3, 3);
+  }
+  
+  #regLogin:hover{
+      background-color: rgb(0, 116, 0);
+  }
+  
+  .register form div input {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    outline: none;
+  }
+  
+  .register form div input:focus {
+    border: 1px solid red;
+  }
+  
+  .register form hr {
+    width: 100%;
+    padding: 0.5px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+  }
+
+/* BLOGS PAGE CSS */
+
+.blogs, .yourBlogs {
+  margin: 20px 20%;
+}
+
+.blogs h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.blogsContainer {
+  background-color: rgb(248, 248, 248);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 50px 0px;
+  border-radius: 5px;
+}
+
+.blogTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  /* background-color: gray; */
+}
+
+.blogTopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogProfilePic {
+  background-color: rgb(255, 81, 0);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.blogTopDiv h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.blogTop button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid rgb(195, 195, 195);
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.blogTop button:hover {
+  background-color: rgb(249, 249, 249);
+}
+
+.blogBottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  /* background-color: gainsboro; */
+  line-height: 0px;
+}
+
+.blogImage {
+  margin-top: 10px;
+  height: 40vh;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+.createBlog {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.createBlog :where(input, textarea, button) {
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid rgb(222, 222, 222);
+  outline: none;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.createBlog button {
+  background-color: green;
+  color: white;
+  width: 20%;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.createBlog button:hover {
+  background-color: rgb(0, 114, 0);
+}
